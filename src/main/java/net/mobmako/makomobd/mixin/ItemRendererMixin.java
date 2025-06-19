@@ -35,6 +35,9 @@ public abstract class ItemRendererMixin {
         if (stack.getItem() == ModItems.AMETHYST_MACUAHUITL && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
             return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MakoMobd.MOD_ID, "amethyst_macuahuitl")));
         }
+        if (stack.getItem() == ModItems.MACUAHUITL && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
+            return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MakoMobd.MOD_ID, "macuahuitl")));
+        }
 
         return bakedModel;
     }
@@ -47,6 +50,9 @@ public abstract class ItemRendererMixin {
     public BakedModel getHeldItemModelMixin(BakedModel bakedModel, @Local(argsOnly = true) ItemStack stack) {
         if (stack.getItem() == ModItems.AMETHYST_MACUAHUITL) {
             return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MakoMobd.MOD_ID, "amethyst_macuahuitl_3d")));
+        }
+        if (stack.getItem() == ModItems.MACUAHUITL) {
+            return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MakoMobd.MOD_ID, "macuahuitl_3d")));
         }
 
         return bakedModel;

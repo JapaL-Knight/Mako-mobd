@@ -1,4 +1,13 @@
 {
   "item.makomobd.knowledge_of_efficiency" : "Knowledge of efficiency",
-  "item.makomobd.amethyst_macuahuitl" : "Amethyst Macuahuitl"
+  "item.makomobd.amethyst_macuahuitl" : "Amethyst Macuahuitl",
+  "item.makomobd.macuahuitl" : "Macuahuitl",
+  "item.makomobd.amethyst_engraving_smithing_template" : "Smithing Template",
+
+  "item.makomobd.smithing_template.amethyst_engraving.applies_to": "Macuahuitl",
+  "item.makomobd.smithing_template.amethyst_engraving.ingredients": "Amethyst Shard",
+  "item.makomobd.smithing_template.amethyst_engraving.base_slot_description": "Add Macuahuitl",
+  "item.makomobd.smithing_template.amethyst_engraving.additions_slot_description": "Add Amethyst Shard",
+
+  "upgrade.makomobd.amethyst_macuahuitl_upgrade": "Amethyst Macuahuitl Upgrade"
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:amethyst_shard"
+  },
+  "base": {
+    "item": "makomobd:macuahuitl"
+  },
+  "result": {
+    "count": 1,
+    "id": "makomobd:amethyst_macuahuitl"
+  },
+  "template": {
+    "item": "makomobd:amethyst_engraving_smithing_template"
+  }
+
+}

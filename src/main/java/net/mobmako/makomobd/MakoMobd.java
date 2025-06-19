@@ -12,6 +12,7 @@ public class MakoMobd implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		ModItems.registerModItems();
 	}
 }

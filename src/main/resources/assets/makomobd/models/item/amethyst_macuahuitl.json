@@ -2,5 +2,13 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "makomobd:item/amethyst_macuahuitl"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "makomobd:amethyst": 1
+      },
+      "model": "makomobd:item/amethyst_macuahuitl_7_3d"
+    }
+  ]
 }

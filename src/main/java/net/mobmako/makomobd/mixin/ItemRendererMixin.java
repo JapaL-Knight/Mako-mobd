@@ -1,6 +1,7 @@
 package net.mobmako.makomobd.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
+import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.mobmako.makomobd.MakoMobd;
 import net.mobmako.makomobd.item.ModItems;
 import net.minecraft.client.render.item.ItemModels;
@@ -49,7 +50,7 @@ public abstract class ItemRendererMixin {
     )
     public BakedModel getHeldItemModelMixin(BakedModel bakedModel, @Local(argsOnly = true) ItemStack stack) {
         if (stack.getItem() == ModItems.AMETHYST_MACUAHUITL) {
-            return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MakoMobd.MOD_ID, "amethyst_macuahuitl_3d")));
+            return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MakoMobd.MOD_ID, "amethyst_macuahuitl_3d_"+  (8 - (int) stack.getDamage()/3) )));
         }
         if (stack.getItem() == ModItems.MACUAHUITL) {
             return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MakoMobd.MOD_ID, "macuahuitl_3d")));
